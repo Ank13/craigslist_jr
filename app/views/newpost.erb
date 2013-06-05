@@ -1,0 +1,26 @@
+<div class="container">
+ 
+  <h3> New Post Form</h3>
+ 
+  <div id="form">
+
+      <form action="/posts/newpost/create" method="post">  
+
+          Title:  <input type="text" name="title"> <br>
+          Description:  <input type="text" name="description"> <br>
+          Email:  <input type="text" name="email"> <br>
+          Price:  <input type="text" name="price"> <br>
+
+          Category: <select name="category_id">
+            <option selected value=1>Cars</option>
+            <option value=2>Old stuff</option>
+            <option value=3>Guns</option>
+          </select>
+          <br>
+        <input type="submit" value="Submit">
+
+      </form>
+
+  </div>
+</div>
+

@@ -1,0 +1,24 @@
+<div class="container">
+ 
+  <h1>Category: <%= @category %></h1>
+ 
+  <h3>Posts: </h3>
+  
+  <div id="posts">
+     <% @posts.each do |post| %>
+     <ul>
+        <li> <a href=/posts/<%= post[:id] %>> <%= post[:title] %> </a></li>
+      </ul>
+    <% end %> 
+  </div>
+
+  <br>
+
+  <h3>User actions: </h3>
+  <div id="new_post">
+      <a href="/posts/newpost">Add a new post </a>
+  </div>
+
+</div>
+
+

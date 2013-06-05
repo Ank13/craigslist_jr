@@ -1,0 +1,15 @@
+<div class="container">
+ 
+  <h1>Welcome to Guns, Cars, & Old stuff!</h1>
+ 
+  <h2>Categories: </h2>
+    <div id="categories">
+      <% @categories.each do |category| %>
+       <ul>
+          <li><a href=/<%= category[:id] %>> <%= category[:name] %> </a></li>
+        </ul>
+      <% end %> 
+
+  </div>
+</div>
+
